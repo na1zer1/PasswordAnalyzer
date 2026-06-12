@@ -1,0 +1,10 @@
+{
+    "max_lenth_points": 40,
+    "max_tf_points": 51,
+    "word_k": {
+        "GOOD": 1.1,
+        "MEDIUM": 1,
+        "WEAK": 0.9
+    },
+    "enable_hostory": true
+}
