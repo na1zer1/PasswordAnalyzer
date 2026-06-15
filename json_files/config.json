@@ -1,10 +1,27 @@
 {
-    "max_lenth_points": 40,
+    "max_length_points": 40,
     "max_tf_points": 51,
     "word_k": {
         "GOOD": 1.1,
         "MEDIUM": 1,
         "WEAK": 0.9
     },
-    "enable_hostory": true
+    "word_color": {
+        "GOOD": "green",
+        "MEDIUM": "yellow",
+        "WEAK": "red"
+    },
+    "recomendations": {
+        "LENGTH": "increase length",
+        "UPPER_CASES_IN": "add uppercase letters",
+        "DIGITS_IN": "add numbers",
+        "SPEC_SYMBOLS_IN": "add special characters"
+    },
+    "symbols": {
+        "letters": "abcdefghijklmnopqrstuvwxyz",
+        "upper_letters": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "digits": "0123456789",
+        "spec_symbols": "!#$%&'()*+,-./:;<=>?@[]^_{|}~`"
+    },
+    "enable_history": true
 }

@@ -2,7 +2,7 @@ use std::io::{self, Read}; // Импортируем отдельно блок i
 
 fn main() {
     let mut password: String = String::new();
-    let lenth: usize;
+    let length: usize;
     let mut is_upper_case: bool = false;
     let mut is_num: bool = false;
     let mut is_spec_symbol: bool = false;
@@ -15,7 +15,7 @@ fn main() {
     let clean_password: &str = password.trim();
 
     // Длина
-    lenth = clean_password.len();
+    length = clean_password.len();
 
     // Содержиться ли верхний регистр
     check_upper_case(&clean_password, &mut is_upper_case);
@@ -26,7 +26,7 @@ fn main() {
     // Есть ли спец символы?
     check_symbols(&clean_password, &mut is_spec_symbol);
     
-    print!("password:{}\nlenth:{lenth}\nupper_cases_in:{is_upper_case}\ndigits_in:{is_num}\nspec_symbols_in:{is_spec_symbol}", clean_password);
+    print!("password:{clean_password}\nlength:{length}\nupper_cases_in:{is_upper_case}\ndigits_in:{is_num}\nspec_symbols_in:{is_spec_symbol}");
 }
 
 fn check_upper_case(password: &str, is_upper_case: &mut bool) {
